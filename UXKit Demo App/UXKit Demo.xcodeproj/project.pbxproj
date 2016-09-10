@@ -1,0 +1,997 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD41816E1D84781E0058EA67 /* PhotosFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DD41816D1D84781E0058EA67 /* PhotosFlowLayout.m */; };
+		DD41817F1D847E660058EA67 /* Dwifft.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD41817D1D847E660058EA67 /* Dwifft.swift */; };
+		DD4181801D847E660058EA67 /* Dwifft+UXKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD41817E1D847E660058EA67 /* Dwifft+UXKit.swift */; };
+		DD4181831D8480FB0058EA67 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4181821D8480FB0058EA67 /* PhotoViewController.m */; };
+		DD4181861D848CFB0058EA67 /* UXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4181851D848CFB0058EA67 /* UXKit.framework */; };
+		DD9C224C1D839C8C00C73F9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C224B1D839C8C00C73F9B /* AppDelegate.m */; };
+		DD9C224F1D839C8C00C73F9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C224E1D839C8C00C73F9B /* main.m */; };
+		DD9C22541D839C8C00C73F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9C22531D839C8C00C73F9B /* Assets.xcassets */; };
+		DD9C22571D839C8C00C73F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9C22551D839C8C00C73F9B /* Main.storyboard */; };
+		DD9C239E1D83ADEF00C73F9B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C238F1D83ADE700C73F9B /* Result.framework */; };
+		DD9C239F1D83ADEF00C73F9B /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C238F1D83ADE700C73F9B /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD9C23A21D83ADEF00C73F9B /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C23791D83ADE700C73F9B /* ReactiveCocoa.framework */; };
+		DD9C23A31D83ADEF00C73F9B /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C23791D83ADE700C73F9B /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD9C23B11D83AE8100C73F9B /* FlickrSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C23B01D83AE7D00C73F9B /* FlickrSearch.framework */; };
+		DD9C23B21D83AE8100C73F9B /* FlickrSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C23B01D83AE7D00C73F9B /* FlickrSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD9C23BC1D83B60B00C73F9B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C23BB1D83B60B00C73F9B /* SearchViewController.m */; };
+		DD9C23C01D83B6E600C73F9B /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C23BF1D83B6E600C73F9B /* PhotoCollectionViewCell.m */; };
+		DD9C23C41D83BEF300C73F9B /* CollectionViewDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C23C31D83BEF300C73F9B /* CollectionViewDataHandler.swift */; };
+		DD9C23CC1D83CF8B00C73F9B /* SearchBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C23CB1D83CF8B00C73F9B /* SearchBarItem.m */; };
+		DD9C23CF1D83D21A00C73F9B /* SearchBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C23CE1D83D21A00C73F9B /* SearchBarController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD9C23781D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725EA19E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-Mac";
+		};
+		DD9C237A1D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725F519E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-MacTests";
+		};
+		DD9C237C1D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047260C19E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		DD9C237E1D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047261619E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOSTests";
+		};
+		DD9C23801D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9B315541B3940610001CB9C;
+			remoteInfo = "ReactiveCocoa-watchOS";
+		};
+		DD9C23821D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57A4D2411BA13D7A00F7D4B1;
+			remoteInfo = "ReactiveCocoa-tvOS";
+		};
+		DD9C23841D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7DFBED031CDB8C9500EE435B;
+			remoteInfo = "ReactiveCocoa-tvOSTests";
+		};
+		DD9C238E1D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480571A9572F5009D7229;
+			remoteInfo = "Result-Mac";
+		};
+		DD9C23901D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480671A9572F5009D7229;
+			remoteInfo = "Result-MacTests";
+		};
+		DD9C23921D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D454807D1A957361009D7229;
+			remoteInfo = "Result-iOS";
+		};
+		DD9C23941D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480871A957362009D7229;
+			remoteInfo = "Result-iOSTests";
+		};
+		DD9C23961D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57FCDE471BA280DC00130C48;
+			remoteInfo = "Result-tvOS";
+		};
+		DD9C23981D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57FCDE541BA280E000130C48;
+			remoteInfo = "Result-tvOSTests";
+		};
+		DD9C239A1D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D03579A31B2B788F005D26AE;
+			remoteInfo = "Result-watchOS";
+		};
+		DD9C239C1D83ADE700C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D03579B01B2B78A1005D26AE;
+			remoteInfo = "Result-watchOSTests";
+		};
+		DD9C23A01D83ADEF00C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D45480561A9572F5009D7229;
+			remoteInfo = "Result-Mac";
+		};
+		DD9C23A41D83ADEF00C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D04725E919E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-Mac";
+		};
+		DD9C23AF1D83AE7D00C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C23AB1D83AE7C00C73F9B /* FlickrSearch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD9C23011D83A92B00C73F9B;
+			remoteInfo = FlickrSearch;
+		};
+		DD9C23B31D83AE8100C73F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9C23AB1D83AE7C00C73F9B /* FlickrSearch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9C23001D83A92B00C73F9B;
+			remoteInfo = FlickrSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD9C23151D83A93500C73F9B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DD9C23A31D83ADEF00C73F9B /* ReactiveCocoa.framework in Embed Frameworks */,
+				DD9C239F1D83ADEF00C73F9B /* Result.framework in Embed Frameworks */,
+				DD9C23B21D83AE8100C73F9B /* FlickrSearch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DD41816C1D84781E0058EA67 /* PhotosFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosFlowLayout.h; sourceTree = "<group>"; };
+		DD41816D1D84781E0058EA67 /* PhotosFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosFlowLayout.m; sourceTree = "<group>"; };
+		DD41817D1D847E660058EA67 /* Dwifft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dwifft.swift; sourceTree = "<group>"; };
+		DD41817E1D847E660058EA67 /* Dwifft+UXKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dwifft+UXKit.swift"; sourceTree = "<group>"; };
+		DD4181811D8480FB0058EA67 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		DD4181821D8480FB0058EA67 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		DD4181851D848CFB0058EA67 /* UXKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UXKit.framework; path = ../../../../../../System/Library/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Frameworks/UXKit.framework; sourceTree = "<group>"; };
+		DD4181871D848FCC0058EA67 /* Credentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
+		DD9C22471D839C8C00C73F9B /* UXKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UXKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9C224A1D839C8C00C73F9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD9C224B1D839C8C00C73F9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD9C224E1D839C8C00C73F9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD9C22531D839C8C00C73F9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD9C22561D839C8C00C73F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD9C22581D839C8C00C73F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9C22851D83A12F00C73F9B /* NSColor-Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor-Compatibility.h"; sourceTree = "<group>"; };
+		DD9C22861D83A12F00C73F9B /* NSControl-Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSControl-Compatibility.h"; sourceTree = "<group>"; };
+		DD9C228A1D83A12F00C73F9B /* NSEvent-UXCollectionViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEvent-UXCollectionViewAdditions.h"; sourceTree = "<group>"; };
+		DD9C228B1D83A12F00C73F9B /* NSGestureRecognizer-UXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSGestureRecognizer-UXKit.h"; sourceTree = "<group>"; };
+		DD9C228D1D83A12F00C73F9B /* NSImage-Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage-Compatibility.h"; sourceTree = "<group>"; };
+		DD9C228E1D83A12F00C73F9B /* NSImage-UXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage-UXKit.h"; sourceTree = "<group>"; };
+		DD9C228F1D83A12F00C73F9B /* NSIndexPath-UXCollectionViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath-UXCollectionViewAdditions.h"; sourceTree = "<group>"; };
+		DD9C22901D83A12F00C73F9B /* NSIndexPath-UXTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath-UXTableView.h"; sourceTree = "<group>"; };
+		DD9C22911D83A12F00C73F9B /* NSMenuItem-Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMenuItem-Compatibility.h"; sourceTree = "<group>"; };
+		DD9C22951D83A12F00C73F9B /* NSObject-UXCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-UXCollectionView.h"; sourceTree = "<group>"; };
+		DD9C22971D83A12F00C73F9B /* NSProgressIndicator-Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProgressIndicator-Compatibility.h"; sourceTree = "<group>"; };
+		DD9C22981D83A12F00C73F9B /* NSScreen-Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScreen-Compatibility.h"; sourceTree = "<group>"; };
+		DD9C22991D83A12F00C73F9B /* NSScrollView-UXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScrollView-UXKit.h"; sourceTree = "<group>"; };
+		DD9C229A1D83A12F00C73F9B /* NSSecureCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSecureCoding-Protocol.h"; sourceTree = "<group>"; };
+		DD9C229B1D83A12F00C73F9B /* NSTextField-Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextField-Compatibility.h"; sourceTree = "<group>"; };
+		DD9C229C1D83A12F00C73F9B /* NSTextFieldCell-UXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextFieldCell-UXKit.h"; sourceTree = "<group>"; };
+		DD9C229D1D83A12F00C73F9B /* NSTextView-Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextView-Compatibility.h"; sourceTree = "<group>"; };
+		DD9C229E1D83A12F00C73F9B /* NSToolbarDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSToolbarDelegate-Protocol.h"; sourceTree = "<group>"; };
+		DD9C229F1D83A12F00C73F9B /* NSView-Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView-Compatibility.h"; sourceTree = "<group>"; };
+		DD9C22A01D83A12F00C73F9B /* NSView-UXCollectionViewRearrangingCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView-UXCollectionViewRearrangingCoordinator.h"; sourceTree = "<group>"; };
+		DD9C22A11D83A12F00C73F9B /* NSView-UXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView-UXKit.h"; sourceTree = "<group>"; };
+		DD9C22A21D83A12F00C73F9B /* NSView-UXKitAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView-UXKitAppearance.h"; sourceTree = "<group>"; };
+		DD9C22A31D83A12F00C73F9B /* NSViewAnimationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSViewAnimationContext.h; sourceTree = "<group>"; };
+		DD9C22A41D83A12F00C73F9B /* NSViewController-UXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSViewController-UXViewController.h"; sourceTree = "<group>"; };
+		DD9C22A51D83A12F00C73F9B /* NSWindow-UXKitAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow-UXKitAppearance.h"; sourceTree = "<group>"; };
+		DD9C22A61D83A12F00C73F9B /* NSWindowDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindowDelegate-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22A71D83A12F00C73F9B /* UIMutableIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMutableIndexPath.h; sourceTree = "<group>"; };
+		DD9C22A81D83A12F00C73F9B /* UITextInputTraits-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextInputTraits-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22A91D83A12F00C73F9B /* UXAuxiliaryNavigationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXAuxiliaryNavigationStore.h; sourceTree = "<group>"; };
+		DD9C22AA1D83A12F00C73F9B /* UXBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXBackButton.h; sourceTree = "<group>"; };
+		DD9C22AB1D83A12F00C73F9B /* UXBackButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXBackButtonCell.h; sourceTree = "<group>"; };
+		DD9C22AC1D83A12F00C73F9B /* UXBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXBar.h; sourceTree = "<group>"; };
+		DD9C22AD1D83A12F00C73F9B /* UXBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXBarButtonItem.h; sourceTree = "<group>"; };
+		DD9C22AE1D83A12F00C73F9B /* UXBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXBarItem.h; sourceTree = "<group>"; };
+		DD9C22AF1D83A12F00C73F9B /* UXBarPositioning-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXBarPositioning-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22B01D83A12F00C73F9B /* UXBarPositioningDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXBarPositioningDelegate-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22B11D83A12F00C73F9B /* UXClickEventTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXClickEventTracker.h; sourceTree = "<group>"; };
+		DD9C22B21D83A12F00C73F9B /* UXCollectionClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionClipView.h; sourceTree = "<group>"; };
+		DD9C22B31D83A12F00C73F9B /* UXCollectionDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionDocumentView.h; sourceTree = "<group>"; };
+		DD9C22B41D83A12F00C73F9B /* UXCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionReusableView.h; sourceTree = "<group>"; };
+		DD9C22B51D83A12F00C73F9B /* UXCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionView.h; sourceTree = "<group>"; };
+		DD9C22B61D83A12F00C73F9B /* UXCollectionViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewAnimation.h; sourceTree = "<group>"; };
+		DD9C22B71D83A12F00C73F9B /* UXCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewCell.h; sourceTree = "<group>"; };
+		DD9C22B81D83A12F00C73F9B /* UXCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewController.h; sourceTree = "<group>"; };
+		DD9C22B91D83A12F00C73F9B /* UXCollectionViewData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewData.h; sourceTree = "<group>"; };
+		DD9C22BA1D83A12F00C73F9B /* UXCollectionViewDataSource-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXCollectionViewDataSource-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22BB1D83A12F00C73F9B /* UXCollectionViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXCollectionViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22BC1D83A12F00C73F9B /* UXCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		DD9C22BD1D83A12F00C73F9B /* UXCollectionViewFlowLayoutInvalidationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewFlowLayoutInvalidationContext.h; sourceTree = "<group>"; };
+		DD9C22BE1D83A12F00C73F9B /* UXCollectionViewIndexPathsSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewIndexPathsSet.h; sourceTree = "<group>"; };
+		DD9C22BF1D83A12F00C73F9B /* UXCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewLayout.h; sourceTree = "<group>"; };
+		DD9C22C01D83A12F00C73F9B /* UXCollectionViewLayoutAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewLayoutAccessibility.h; sourceTree = "<group>"; };
+		DD9C22C11D83A12F00C73F9B /* UXCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
+		DD9C22C21D83A12F00C73F9B /* UXCollectionViewLayoutInvalidationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewLayoutInvalidationContext.h; sourceTree = "<group>"; };
+		DD9C22C31D83A12F00C73F9B /* UXCollectionViewLayoutProxyDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXCollectionViewLayoutProxyDelegate-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22C41D83A12F00C73F9B /* UXCollectionViewLayoutSectionAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewLayoutSectionAccessibility.h; sourceTree = "<group>"; };
+		DD9C22C51D83A12F00C73F9B /* UXCollectionViewMutableIndexPathsSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewMutableIndexPathsSet.h; sourceTree = "<group>"; };
+		DD9C22C61D83A12F00C73F9B /* UXCollectionViewPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewPanGestureRecognizer.h; sourceTree = "<group>"; };
+		DD9C22C71D83A12F00C73F9B /* UXCollectionViewRearrangingCoordinatorDragRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewRearrangingCoordinatorDragRecognizer.h; sourceTree = "<group>"; };
+		DD9C22C81D83A12F00C73F9B /* UXCollectionViewUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewUpdate.h; sourceTree = "<group>"; };
+		DD9C22C91D83A12F00C73F9B /* UXCollectionViewUpdateGap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewUpdateGap.h; sourceTree = "<group>"; };
+		DD9C22CA1D83A12F00C73F9B /* UXCollectionViewUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXCollectionViewUpdateItem.h; sourceTree = "<group>"; };
+		DD9C22CB1D83A12F00C73F9B /* UXControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXControl.h; sourceTree = "<group>"; };
+		DD9C22CC1D83A12F00C73F9B /* UXDragEventTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXDragEventTracker.h; sourceTree = "<group>"; };
+		DD9C22CD1D83A12F00C73F9B /* UXEventTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXEventTracker.h; sourceTree = "<group>"; };
+		DD9C22CE1D83A12F00C73F9B /* UXIdentityTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXIdentityTransitionController.h; sourceTree = "<group>"; };
+		DD9C22CF1D83A12F00C73F9B /* UXImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXImageView.h; sourceTree = "<group>"; };
+		DD9C22D01D83A12F00C73F9B /* UXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXKit.h; sourceTree = "<group>"; };
+		DD9C22D11D83A12F00C73F9B /* UXKitAppearance-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXKitAppearance-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22D21D83A12F00C73F9B /* UXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXLabel.h; sourceTree = "<group>"; };
+		DD9C22D31D83A12F00C73F9B /* UXLayoutSupport-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXLayoutSupport-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22D41D83A12F00C73F9B /* UXLongClickEventTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXLongClickEventTracker.h; sourceTree = "<group>"; };
+		DD9C22D51D83A12F00C73F9B /* UXNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXNavigationBar.h; sourceTree = "<group>"; };
+		DD9C22D61D83A12F00C73F9B /* UXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXNavigationController.h; sourceTree = "<group>"; };
+		DD9C22D71D83A12F00C73F9B /* UXNavigationControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXNavigationControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22D81D83A12F00C73F9B /* UXNavigationDestination-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXNavigationDestination-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22D91D83A12F00C73F9B /* UXNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXNavigationItem.h; sourceTree = "<group>"; };
+		DD9C22DA1D83A12F00C73F9B /* UXNavigationRoot-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXNavigationRoot-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22DB1D83A12F00C73F9B /* UXParallaxTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXParallaxTransitionController.h; sourceTree = "<group>"; };
+		DD9C22DC1D83A12F00C73F9B /* UXPinchEventTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXPinchEventTracker.h; sourceTree = "<group>"; };
+		DD9C22DD1D83A12F00C73F9B /* UXPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXPopover.h; sourceTree = "<group>"; };
+		DD9C22DE1D83A12F00C73F9B /* UXPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXPopoverController.h; sourceTree = "<group>"; };
+		DD9C22DF1D83A12F00C73F9B /* UXProxyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXProxyViewController.h; sourceTree = "<group>"; };
+		DD9C22E01D83A12F00C73F9B /* UXSlideTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXSlideTransitionController.h; sourceTree = "<group>"; };
+		DD9C22E11D83A12F00C73F9B /* UXSourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXSourceController.h; sourceTree = "<group>"; };
+		DD9C22E21D83A12F00C73F9B /* UXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXTabBarController.h; sourceTree = "<group>"; };
+		DD9C22E31D83A12F00C73F9B /* UXTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXTabBarItem.h; sourceTree = "<group>"; };
+		DD9C22E41D83A12F00C73F9B /* UXTableLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXTableLayout.h; sourceTree = "<group>"; };
+		DD9C22E51D83A12F00C73F9B /* UXTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXTableView.h; sourceTree = "<group>"; };
+		DD9C22E61D83A12F00C73F9B /* UXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXTableViewCell.h; sourceTree = "<group>"; };
+		DD9C22E71D83A12F00C73F9B /* UXTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXTableViewController.h; sourceTree = "<group>"; };
+		DD9C22E81D83A12F00C73F9B /* UXTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		DD9C22E91D83A12F00C73F9B /* UXToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXToolbar.h; sourceTree = "<group>"; };
+		DD9C22EA1D83A12F00C73F9B /* UXToolbarDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXToolbarDelegate-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22EB1D83A12F00C73F9B /* UXTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXTransitionController.h; sourceTree = "<group>"; };
+		DD9C22EC1D83A12F00C73F9B /* UXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXView.h; sourceTree = "<group>"; };
+		DD9C22ED1D83A12F00C73F9B /* UXViewAnimationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXViewAnimationContext.h; sourceTree = "<group>"; };
+		DD9C22EE1D83A12F00C73F9B /* UXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXViewController.h; sourceTree = "<group>"; };
+		DD9C22EF1D83A12F00C73F9B /* UXViewControllerAnimatedTransitioning-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXViewControllerAnimatedTransitioning-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22F01D83A12F00C73F9B /* UXViewControllerContextTransitioning-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXViewControllerContextTransitioning-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22F11D83A12F00C73F9B /* UXViewControllerInteractiveTransitioning-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXViewControllerInteractiveTransitioning-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22F21D83A12F00C73F9B /* UXViewControllerTransitionCoordinator-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXViewControllerTransitionCoordinator-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22F31D83A12F00C73F9B /* UXViewControllerTransitionCoordinatorContext-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UXViewControllerTransitionCoordinatorContext-Protocol.h"; sourceTree = "<group>"; };
+		DD9C22F41D83A12F00C73F9B /* UXViewControllerWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXViewControllerWindowTransition.h; sourceTree = "<group>"; };
+		DD9C22F51D83A12F00C73F9B /* UXWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXWindowController.h; sourceTree = "<group>"; };
+		DD9C22F61D83A12F00C73F9B /* UXZoomingCrossfadeTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXZoomingCrossfadeTransitionController.h; sourceTree = "<group>"; };
+		DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = "UXKit Demo/Vendor/ReactiveCocoa/Carthage/Checkouts/Result/Result.xcodeproj"; sourceTree = "<group>"; };
+		DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = "UXKit Demo/Vendor/ReactiveCocoa/ReactiveCocoa.xcodeproj"; sourceTree = "<group>"; };
+		DD9C23AB1D83AE7C00C73F9B /* FlickrSearch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FlickrSearch.xcodeproj; path = "UXKit Demo/FlickrSearch/FlickrSearch.xcodeproj"; sourceTree = "<group>"; };
+		DD9C23BA1D83B60B00C73F9B /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		DD9C23BB1D83B60B00C73F9B /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		DD9C23BE1D83B6E600C73F9B /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		DD9C23BF1D83B6E600C73F9B /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		DD9C23C21D83BEF300C73F9B /* UXKit Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UXKit Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD9C23C31D83BEF300C73F9B /* CollectionViewDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDataHandler.swift; sourceTree = "<group>"; };
+		DD9C23CA1D83CF8B00C73F9B /* SearchBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarItem.h; sourceTree = "<group>"; };
+		DD9C23CB1D83CF8B00C73F9B /* SearchBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarItem.m; sourceTree = "<group>"; };
+		DD9C23CD1D83D21A00C73F9B /* SearchBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarController.h; sourceTree = "<group>"; };
+		DD9C23CE1D83D21A00C73F9B /* SearchBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD9C22441D839C8C00C73F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4181861D848CFB0058EA67 /* UXKit.framework in Frameworks */,
+				DD9C239E1D83ADEF00C73F9B /* Result.framework in Frameworks */,
+				DD9C23A21D83ADEF00C73F9B /* ReactiveCocoa.framework in Frameworks */,
+				DD9C23B11D83AE8100C73F9B /* FlickrSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD4181841D848CFB0058EA67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD4181851D848CFB0058EA67 /* UXKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD9C223E1D839C8C00C73F9B = {
+			isa = PBXGroup;
+			children = (
+				DD9C23AB1D83AE7C00C73F9B /* FlickrSearch.xcodeproj */,
+				DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */,
+				DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */,
+				DD9C227F1D83A12F00C73F9B /* UXKitHeaders */,
+				DD9C22491D839C8C00C73F9B /* UXKit Demo */,
+				DD9C22481D839C8C00C73F9B /* Products */,
+				DD4181841D848CFB0058EA67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD9C22481D839C8C00C73F9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C22471D839C8C00C73F9B /* UXKit Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9C22491D839C8C00C73F9B /* UXKit Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C23C21D83BEF300C73F9B /* UXKit Demo-Bridging-Header.h */,
+				DD9C23B81D83B5DC00C73F9B /* Resources */,
+				DD9C23B71D83B5D600C73F9B /* Bootstrap */,
+				DD9C23BD1D83B6D100C73F9B /* Views */,
+				DD9C23C11D83BEDF00C73F9B /* Helpers */,
+				DD9C23B91D83B5EF00C73F9B /* Controllers */,
+			);
+			path = "UXKit Demo";
+			sourceTree = "<group>";
+		};
+		DD9C227F1D83A12F00C73F9B /* UXKitHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C22851D83A12F00C73F9B /* NSColor-Compatibility.h */,
+				DD9C22861D83A12F00C73F9B /* NSControl-Compatibility.h */,
+				DD9C228A1D83A12F00C73F9B /* NSEvent-UXCollectionViewAdditions.h */,
+				DD9C228B1D83A12F00C73F9B /* NSGestureRecognizer-UXKit.h */,
+				DD9C228D1D83A12F00C73F9B /* NSImage-Compatibility.h */,
+				DD9C228E1D83A12F00C73F9B /* NSImage-UXKit.h */,
+				DD9C228F1D83A12F00C73F9B /* NSIndexPath-UXCollectionViewAdditions.h */,
+				DD9C22901D83A12F00C73F9B /* NSIndexPath-UXTableView.h */,
+				DD9C22911D83A12F00C73F9B /* NSMenuItem-Compatibility.h */,
+				DD9C22951D83A12F00C73F9B /* NSObject-UXCollectionView.h */,
+				DD9C22971D83A12F00C73F9B /* NSProgressIndicator-Compatibility.h */,
+				DD9C22981D83A12F00C73F9B /* NSScreen-Compatibility.h */,
+				DD9C22991D83A12F00C73F9B /* NSScrollView-UXKit.h */,
+				DD9C229A1D83A12F00C73F9B /* NSSecureCoding-Protocol.h */,
+				DD9C229B1D83A12F00C73F9B /* NSTextField-Compatibility.h */,
+				DD9C229C1D83A12F00C73F9B /* NSTextFieldCell-UXKit.h */,
+				DD9C229D1D83A12F00C73F9B /* NSTextView-Compatibility.h */,
+				DD9C229E1D83A12F00C73F9B /* NSToolbarDelegate-Protocol.h */,
+				DD9C229F1D83A12F00C73F9B /* NSView-Compatibility.h */,
+				DD9C22A01D83A12F00C73F9B /* NSView-UXCollectionViewRearrangingCoordinator.h */,
+				DD9C22A11D83A12F00C73F9B /* NSView-UXKit.h */,
+				DD9C22A21D83A12F00C73F9B /* NSView-UXKitAppearance.h */,
+				DD9C22A31D83A12F00C73F9B /* NSViewAnimationContext.h */,
+				DD9C22A41D83A12F00C73F9B /* NSViewController-UXViewController.h */,
+				DD9C22A51D83A12F00C73F9B /* NSWindow-UXKitAppearance.h */,
+				DD9C22A61D83A12F00C73F9B /* NSWindowDelegate-Protocol.h */,
+				DD9C22A71D83A12F00C73F9B /* UIMutableIndexPath.h */,
+				DD9C22A81D83A12F00C73F9B /* UITextInputTraits-Protocol.h */,
+				DD9C22A91D83A12F00C73F9B /* UXAuxiliaryNavigationStore.h */,
+				DD9C22AA1D83A12F00C73F9B /* UXBackButton.h */,
+				DD9C22AB1D83A12F00C73F9B /* UXBackButtonCell.h */,
+				DD9C22AC1D83A12F00C73F9B /* UXBar.h */,
+				DD9C22AD1D83A12F00C73F9B /* UXBarButtonItem.h */,
+				DD9C22AE1D83A12F00C73F9B /* UXBarItem.h */,
+				DD9C22AF1D83A12F00C73F9B /* UXBarPositioning-Protocol.h */,
+				DD9C22B01D83A12F00C73F9B /* UXBarPositioningDelegate-Protocol.h */,
+				DD9C22B11D83A12F00C73F9B /* UXClickEventTracker.h */,
+				DD9C22B21D83A12F00C73F9B /* UXCollectionClipView.h */,
+				DD9C22B31D83A12F00C73F9B /* UXCollectionDocumentView.h */,
+				DD9C22B41D83A12F00C73F9B /* UXCollectionReusableView.h */,
+				DD9C22B51D83A12F00C73F9B /* UXCollectionView.h */,
+				DD9C22B61D83A12F00C73F9B /* UXCollectionViewAnimation.h */,
+				DD9C22B71D83A12F00C73F9B /* UXCollectionViewCell.h */,
+				DD9C22B81D83A12F00C73F9B /* UXCollectionViewController.h */,
+				DD9C22B91D83A12F00C73F9B /* UXCollectionViewData.h */,
+				DD9C22BA1D83A12F00C73F9B /* UXCollectionViewDataSource-Protocol.h */,
+				DD9C22BB1D83A12F00C73F9B /* UXCollectionViewDelegate-Protocol.h */,
+				DD9C22BC1D83A12F00C73F9B /* UXCollectionViewFlowLayout.h */,
+				DD9C22BD1D83A12F00C73F9B /* UXCollectionViewFlowLayoutInvalidationContext.h */,
+				DD9C22BE1D83A12F00C73F9B /* UXCollectionViewIndexPathsSet.h */,
+				DD9C22BF1D83A12F00C73F9B /* UXCollectionViewLayout.h */,
+				DD9C22C01D83A12F00C73F9B /* UXCollectionViewLayoutAccessibility.h */,
+				DD9C22C11D83A12F00C73F9B /* UXCollectionViewLayoutAttributes.h */,
+				DD9C22C21D83A12F00C73F9B /* UXCollectionViewLayoutInvalidationContext.h */,
+				DD9C22C31D83A12F00C73F9B /* UXCollectionViewLayoutProxyDelegate-Protocol.h */,
+				DD9C22C41D83A12F00C73F9B /* UXCollectionViewLayoutSectionAccessibility.h */,
+				DD9C22C51D83A12F00C73F9B /* UXCollectionViewMutableIndexPathsSet.h */,
+				DD9C22C61D83A12F00C73F9B /* UXCollectionViewPanGestureRecognizer.h */,
+				DD9C22C71D83A12F00C73F9B /* UXCollectionViewRearrangingCoordinatorDragRecognizer.h */,
+				DD9C22C81D83A12F00C73F9B /* UXCollectionViewUpdate.h */,
+				DD9C22C91D83A12F00C73F9B /* UXCollectionViewUpdateGap.h */,
+				DD9C22CA1D83A12F00C73F9B /* UXCollectionViewUpdateItem.h */,
+				DD9C22CB1D83A12F00C73F9B /* UXControl.h */,
+				DD9C22CC1D83A12F00C73F9B /* UXDragEventTracker.h */,
+				DD9C22CD1D83A12F00C73F9B /* UXEventTracker.h */,
+				DD9C22CE1D83A12F00C73F9B /* UXIdentityTransitionController.h */,
+				DD9C22CF1D83A12F00C73F9B /* UXImageView.h */,
+				DD9C22D01D83A12F00C73F9B /* UXKit.h */,
+				DD9C22D11D83A12F00C73F9B /* UXKitAppearance-Protocol.h */,
+				DD9C22D21D83A12F00C73F9B /* UXLabel.h */,
+				DD9C22D31D83A12F00C73F9B /* UXLayoutSupport-Protocol.h */,
+				DD9C22D41D83A12F00C73F9B /* UXLongClickEventTracker.h */,
+				DD9C22D51D83A12F00C73F9B /* UXNavigationBar.h */,
+				DD9C22D61D83A12F00C73F9B /* UXNavigationController.h */,
+				DD9C22D71D83A12F00C73F9B /* UXNavigationControllerDelegate-Protocol.h */,
+				DD9C22D81D83A12F00C73F9B /* UXNavigationDestination-Protocol.h */,
+				DD9C22D91D83A12F00C73F9B /* UXNavigationItem.h */,
+				DD9C22DA1D83A12F00C73F9B /* UXNavigationRoot-Protocol.h */,
+				DD9C22DB1D83A12F00C73F9B /* UXParallaxTransitionController.h */,
+				DD9C22DC1D83A12F00C73F9B /* UXPinchEventTracker.h */,
+				DD9C22DD1D83A12F00C73F9B /* UXPopover.h */,
+				DD9C22DE1D83A12F00C73F9B /* UXPopoverController.h */,
+				DD9C22DF1D83A12F00C73F9B /* UXProxyViewController.h */,
+				DD9C22E01D83A12F00C73F9B /* UXSlideTransitionController.h */,
+				DD9C22E11D83A12F00C73F9B /* UXSourceController.h */,
+				DD9C22E21D83A12F00C73F9B /* UXTabBarController.h */,
+				DD9C22E31D83A12F00C73F9B /* UXTabBarItem.h */,
+				DD9C22E41D83A12F00C73F9B /* UXTableLayout.h */,
+				DD9C22E51D83A12F00C73F9B /* UXTableView.h */,
+				DD9C22E61D83A12F00C73F9B /* UXTableViewCell.h */,
+				DD9C22E71D83A12F00C73F9B /* UXTableViewController.h */,
+				DD9C22E81D83A12F00C73F9B /* UXTableViewHeaderFooterView.h */,
+				DD9C22E91D83A12F00C73F9B /* UXToolbar.h */,
+				DD9C22EA1D83A12F00C73F9B /* UXToolbarDelegate-Protocol.h */,
+				DD9C22EB1D83A12F00C73F9B /* UXTransitionController.h */,
+				DD9C22EC1D83A12F00C73F9B /* UXView.h */,
+				DD9C22ED1D83A12F00C73F9B /* UXViewAnimationContext.h */,
+				DD9C22EE1D83A12F00C73F9B /* UXViewController.h */,
+				DD9C22EF1D83A12F00C73F9B /* UXViewControllerAnimatedTransitioning-Protocol.h */,
+				DD9C22F01D83A12F00C73F9B /* UXViewControllerContextTransitioning-Protocol.h */,
+				DD9C22F11D83A12F00C73F9B /* UXViewControllerInteractiveTransitioning-Protocol.h */,
+				DD9C22F21D83A12F00C73F9B /* UXViewControllerTransitionCoordinator-Protocol.h */,
+				DD9C22F31D83A12F00C73F9B /* UXViewControllerTransitionCoordinatorContext-Protocol.h */,
+				DD9C22F41D83A12F00C73F9B /* UXViewControllerWindowTransition.h */,
+				DD9C22F51D83A12F00C73F9B /* UXWindowController.h */,
+				DD9C22F61D83A12F00C73F9B /* UXZoomingCrossfadeTransitionController.h */,
+			);
+			name = UXKitHeaders;
+			path = ../UXKitHeaders;
+			sourceTree = "<group>";
+		};
+		DD9C236C1D83ADE600C73F9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C238F1D83ADE700C73F9B /* Result.framework */,
+				DD9C23911D83ADE700C73F9B /* Result-MacTests.xctest */,
+				DD9C23931D83ADE700C73F9B /* Result.framework */,
+				DD9C23951D83ADE700C73F9B /* Result-iOSTests.xctest */,
+				DD9C23971D83ADE700C73F9B /* Result.framework */,
+				DD9C23991D83ADE700C73F9B /* Result-tvOSTests.xctest */,
+				DD9C239B1D83ADE700C73F9B /* Result.framework */,
+				DD9C239D1D83ADE700C73F9B /* Result-watchOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9C236F1D83ADE600C73F9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C23791D83ADE700C73F9B /* ReactiveCocoa.framework */,
+				DD9C237B1D83ADE700C73F9B /* ReactiveCocoaTests.xctest */,
+				DD9C237D1D83ADE700C73F9B /* ReactiveCocoa.framework */,
+				DD9C237F1D83ADE700C73F9B /* ReactiveCocoaTests.xctest */,
+				DD9C23811D83ADE700C73F9B /* ReactiveCocoa.framework */,
+				DD9C23831D83ADE700C73F9B /* ReactiveCocoa.framework */,
+				DD9C23851D83ADE700C73F9B /* ReactiveCocoaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9C23AC1D83AE7C00C73F9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C23B01D83AE7D00C73F9B /* FlickrSearch.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9C23B71D83B5D600C73F9B /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				DD4181871D848FCC0058EA67 /* Credentials.h */,
+				DD9C224E1D839C8C00C73F9B /* main.m */,
+				DD9C224A1D839C8C00C73F9B /* AppDelegate.h */,
+				DD9C224B1D839C8C00C73F9B /* AppDelegate.m */,
+			);
+			name = Bootstrap;
+			sourceTree = "<group>";
+		};
+		DD9C23B81D83B5DC00C73F9B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C22581D839C8C00C73F9B /* Info.plist */,
+				DD9C22531D839C8C00C73F9B /* Assets.xcassets */,
+				DD9C22551D839C8C00C73F9B /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DD9C23B91D83B5EF00C73F9B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C23CD1D83D21A00C73F9B /* SearchBarController.h */,
+				DD9C23CE1D83D21A00C73F9B /* SearchBarController.m */,
+				DD9C23BA1D83B60B00C73F9B /* SearchViewController.h */,
+				DD9C23BB1D83B60B00C73F9B /* SearchViewController.m */,
+				DD4181811D8480FB0058EA67 /* PhotoViewController.h */,
+				DD4181821D8480FB0058EA67 /* PhotoViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DD9C23BD1D83B6D100C73F9B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C23BE1D83B6E600C73F9B /* PhotoCollectionViewCell.h */,
+				DD9C23BF1D83B6E600C73F9B /* PhotoCollectionViewCell.m */,
+				DD9C23CA1D83CF8B00C73F9B /* SearchBarItem.h */,
+				DD9C23CB1D83CF8B00C73F9B /* SearchBarItem.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DD9C23C11D83BEDF00C73F9B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DD41817D1D847E660058EA67 /* Dwifft.swift */,
+				DD41817E1D847E660058EA67 /* Dwifft+UXKit.swift */,
+				DD9C23C31D83BEF300C73F9B /* CollectionViewDataHandler.swift */,
+				DD41816C1D84781E0058EA67 /* PhotosFlowLayout.h */,
+				DD41816D1D84781E0058EA67 /* PhotosFlowLayout.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD9C22461D839C8C00C73F9B /* UXKit Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9C225B1D839C8C00C73F9B /* Build configuration list for PBXNativeTarget "UXKit Demo" */;
+			buildPhases = (
+				DD9C22431D839C8C00C73F9B /* Sources */,
+				DD9C22441D839C8C00C73F9B /* Frameworks */,
+				DD9C22451D839C8C00C73F9B /* Resources */,
+				DD9C23151D83A93500C73F9B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9C23A11D83ADEF00C73F9B /* PBXTargetDependency */,
+				DD9C23A51D83ADEF00C73F9B /* PBXTargetDependency */,
+				DD9C23B41D83AE8100C73F9B /* PBXTargetDependency */,
+			);
+			name = "UXKit Demo";
+			productName = "UXKit Demo";
+			productReference = DD9C22471D839C8C00C73F9B /* UXKit Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD9C223F1D839C8C00C73F9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Guilherme Rambo";
+				TargetAttributes = {
+					DD9C22461D839C8C00C73F9B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8C7439RJLG;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DD9C22421D839C8C00C73F9B /* Build configuration list for PBXProject "UXKit Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD9C223E1D839C8C00C73F9B;
+			productRefGroup = DD9C22481D839C8C00C73F9B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DD9C23AC1D83AE7C00C73F9B /* Products */;
+					ProjectRef = DD9C23AB1D83AE7C00C73F9B /* FlickrSearch.xcodeproj */;
+				},
+				{
+					ProductGroup = DD9C236F1D83ADE600C73F9B /* Products */;
+					ProjectRef = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
+				},
+				{
+					ProductGroup = DD9C236C1D83ADE600C73F9B /* Products */;
+					ProjectRef = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				DD9C22461D839C8C00C73F9B /* UXKit Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DD9C23791D83ADE700C73F9B /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = DD9C23781D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C237B1D83ADE700C73F9B /* ReactiveCocoaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.xctest;
+			remoteRef = DD9C237A1D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C237D1D83ADE700C73F9B /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = DD9C237C1D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C237F1D83ADE700C73F9B /* ReactiveCocoaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.xctest;
+			remoteRef = DD9C237E1D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C23811D83ADE700C73F9B /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = DD9C23801D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C23831D83ADE700C73F9B /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = DD9C23821D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C23851D83ADE700C73F9B /* ReactiveCocoaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.xctest;
+			remoteRef = DD9C23841D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C238F1D83ADE700C73F9B /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = DD9C238E1D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C23911D83ADE700C73F9B /* Result-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-MacTests.xctest";
+			remoteRef = DD9C23901D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C23931D83ADE700C73F9B /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = DD9C23921D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C23951D83ADE700C73F9B /* Result-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-iOSTests.xctest";
+			remoteRef = DD9C23941D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C23971D83ADE700C73F9B /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = DD9C23961D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C23991D83ADE700C73F9B /* Result-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-tvOSTests.xctest";
+			remoteRef = DD9C23981D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C239B1D83ADE700C73F9B /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = DD9C239A1D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C239D1D83ADE700C73F9B /* Result-watchOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-watchOSTests.xctest";
+			remoteRef = DD9C239C1D83ADE700C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD9C23B01D83AE7D00C73F9B /* FlickrSearch.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FlickrSearch.framework;
+			remoteRef = DD9C23AF1D83AE7D00C73F9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD9C22451D839C8C00C73F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9C22541D839C8C00C73F9B /* Assets.xcassets in Resources */,
+				DD9C22571D839C8C00C73F9B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD9C22431D839C8C00C73F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9C224F1D839C8C00C73F9B /* main.m in Sources */,
+				DD9C23C01D83B6E600C73F9B /* PhotoCollectionViewCell.m in Sources */,
+				DD9C23CC1D83CF8B00C73F9B /* SearchBarItem.m in Sources */,
+				DD9C23BC1D83B60B00C73F9B /* SearchViewController.m in Sources */,
+				DD9C224C1D839C8C00C73F9B /* AppDelegate.m in Sources */,
+				DD4181801D847E660058EA67 /* Dwifft+UXKit.swift in Sources */,
+				DD9C23C41D83BEF300C73F9B /* CollectionViewDataHandler.swift in Sources */,
+				DD9C23CF1D83D21A00C73F9B /* SearchBarController.m in Sources */,
+				DD41817F1D847E660058EA67 /* Dwifft.swift in Sources */,
+				DD4181831D8480FB0058EA67 /* PhotoViewController.m in Sources */,
+				DD41816E1D84781E0058EA67 /* PhotosFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD9C23A11D83ADEF00C73F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Result-Mac";
+			targetProxy = DD9C23A01D83ADEF00C73F9B /* PBXContainerItemProxy */;
+		};
+		DD9C23A51D83ADEF00C73F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReactiveCocoa-Mac";
+			targetProxy = DD9C23A41D83ADEF00C73F9B /* PBXContainerItemProxy */;
+		};
+		DD9C23B41D83AE8100C73F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlickrSearch;
+			targetProxy = DD9C23B31D83AE8100C73F9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD9C22551D839C8C00C73F9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9C22561D839C8C00C73F9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD9C22591D839C8C00C73F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DD9C225A1D839C8C00C73F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DD9C225C1D839C8C00C73F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8C7439RJLG;
+				FRAMEWORK_SEARCH_PATHS = (
+					../,
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "UXKit Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.guilhermerambo.UXKit-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UXKit Demo/UXKit Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DD9C225D1D839C8C00C73F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8C7439RJLG;
+				FRAMEWORK_SEARCH_PATHS = (
+					../,
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "UXKit Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.guilhermerambo.UXKit-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UXKit Demo/UXKit Demo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD9C22421D839C8C00C73F9B /* Build configuration list for PBXProject "UXKit Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9C22591D839C8C00C73F9B /* Debug */,
+				DD9C225A1D839C8C00C73F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9C225B1D839C8C00C73F9B /* Build configuration list for PBXNativeTarget "UXKit Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9C225C1D839C8C00C73F9B /* Debug */,
+				DD9C225D1D839C8C00C73F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD9C223F1D839C8C00C73F9B /* Project object */;
+}
