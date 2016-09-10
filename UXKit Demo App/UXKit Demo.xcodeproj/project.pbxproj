@@ -12,6 +12,7 @@
 		DD4181801D847E660058EA67 /* Dwifft+UXKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD41817E1D847E660058EA67 /* Dwifft+UXKit.swift */; };
 		DD4181831D8480FB0058EA67 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4181821D8480FB0058EA67 /* PhotoViewController.m */; };
 		DD4181861D848CFB0058EA67 /* UXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4181851D848CFB0058EA67 /* UXKit.framework */; };
+		DD41818A1D8491BA0058EA67 /* AMFlippedClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4181891D8491BA0058EA67 /* AMFlippedClipView.m */; };
 		DD9C224C1D839C8C00C73F9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C224B1D839C8C00C73F9B /* AppDelegate.m */; };
 		DD9C224F1D839C8C00C73F9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C224E1D839C8C00C73F9B /* main.m */; };
 		DD9C22541D839C8C00C73F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9C22531D839C8C00C73F9B /* Assets.xcassets */; };
@@ -190,6 +191,8 @@
 		DD4181821D8480FB0058EA67 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		DD4181851D848CFB0058EA67 /* UXKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UXKit.framework; path = ../../../../../../System/Library/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Frameworks/UXKit.framework; sourceTree = "<group>"; };
 		DD4181871D848FCC0058EA67 /* Credentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
+		DD4181881D8491BA0058EA67 /* AMFlippedClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFlippedClipView.h; sourceTree = "<group>"; };
+		DD4181891D8491BA0058EA67 /* AMFlippedClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFlippedClipView.m; sourceTree = "<group>"; };
 		DD9C22471D839C8C00C73F9B /* UXKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UXKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9C224A1D839C8C00C73F9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD9C224B1D839C8C00C73F9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -563,6 +566,8 @@
 		DD9C23BD1D83B6D100C73F9B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD4181881D8491BA0058EA67 /* AMFlippedClipView.h */,
+				DD4181891D8491BA0058EA67 /* AMFlippedClipView.m */,
 				DD9C23BE1D83B6E600C73F9B /* PhotoCollectionViewCell.h */,
 				DD9C23BF1D83B6E600C73F9B /* PhotoCollectionViewCell.m */,
 				DD9C23CA1D83CF8B00C73F9B /* SearchBarItem.h */,
@@ -791,6 +796,7 @@
 				DD9C224F1D839C8C00C73F9B /* main.m in Sources */,
 				DD9C23C01D83B6E600C73F9B /* PhotoCollectionViewCell.m in Sources */,
 				DD9C23CC1D83CF8B00C73F9B /* SearchBarItem.m in Sources */,
+				DD41818A1D8491BA0058EA67 /* AMFlippedClipView.m in Sources */,
 				DD9C23BC1D83B60B00C73F9B /* SearchViewController.m in Sources */,
 				DD9C224C1D839C8C00C73F9B /* AppDelegate.m in Sources */,
 				DD4181801D847E660058EA67 /* Dwifft+UXKit.swift in Sources */,

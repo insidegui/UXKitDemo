@@ -9,6 +9,7 @@
 #import "PhotoViewController.h"
 
 #import "UXKit.h"
+#import "AMFlippedClipView.h"
 
 #import "AppDelegate.h"
 
@@ -41,11 +42,12 @@
     [super viewDidLoad];
     
     self.scrollView = [NSScrollView new];
+    self.scrollView.contentView = [AMFlippedClipView new];
     self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.scrollView];
     
     self.scrollView.hasVerticalScroller = YES;
-    self.scrollView.hasHorizontalRuler = YES;
+    self.scrollView.hasHorizontalScroller = YES;
     
     [self.scrollView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
     [self.scrollView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;
@@ -54,8 +56,6 @@
     
     self.imageView = [UXImageView new];
     self.imageView.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    self.scrollView.documentView = self.imageView;
     
     [self updateUI];
 }
@@ -68,6 +68,7 @@
     
     [[ImageCache sharedInstance] fetchImageWithURLWithImageURL:self.photo.largeURL callback:^(NSString *imageURL, NSImage *image) {
         self.imageView.image = image;
+        self.scrollView.documentView = self.imageView;
         [NSApp sendAction:@selector(hideLoadingStatus) to:nil from:self];
     }];
 }

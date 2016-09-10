@@ -21,7 +21,6 @@
 @property (nonatomic, strong) FlickrFetcher *fetcher;
 
 @property (nonatomic, strong) NSProgressIndicator *progressIndicator;
-@property (nonatomic, strong) UXBarButtonItem *loadingItem;
 @property (nonatomic, strong) SearchViewController *searchViewController;
 @property (nonatomic, strong) UXWindowController *mainWindowController;
 @property (nonatomic, strong) UXNavigationController *navController;
@@ -62,7 +61,7 @@
 
 - (void)showLoadingStatus
 {
-    if (!self.loadingItem) {
+    if (!self.progressIndicator) {
         self.progressIndicator = [[NSProgressIndicator alloc] init];
         self.progressIndicator.wantsLayer = YES;
         self.progressIndicator.indeterminate = YES;
