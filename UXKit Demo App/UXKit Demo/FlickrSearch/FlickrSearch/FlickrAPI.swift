@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ReactiveCocoa
 
 class FlickrAPI {
     
@@ -31,12 +30,17 @@ class FlickrAPI {
         
     }
     
-    class func search(for query: String, with credentials: FlickrCredentials) -> SignalProducer<FlickrResponse<Photo>?, NSError> {
+    class func search(for query: String, with credentials: FlickrCredentials, completion: @escaping (FlickrResponse<Photo>?, Error?) -> ()) {
         let request = URLRequest(url: Route.Search(query).url(with: credentials))
         
-        return URLSession.shared.rac_data(with: request).retry(upTo: 2).map { (data, response) -> FlickrResponse<Photo>? in
-            return FlickrResponse<Photo>.from(JSON(data: data))
-        }
+        URLSession.shared.dataTask(with: request) { data, _, error in
+            guard let data = data, error == nil else {
+                completion(nil, error)
+                return
+            }
+            
+            completion(FlickrResponse<Photo>.from(JSON(data: data)), nil)
+        }.resume()
     }
     
 }

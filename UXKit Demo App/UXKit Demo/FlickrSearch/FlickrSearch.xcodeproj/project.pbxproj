@@ -15,8 +15,6 @@
 		DD9C232A1D83A97F00C73F9B /* JSONRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C23241D83A97F00C73F9B /* JSONRepresentable.swift */; };
 		DD9C232B1D83A97F00C73F9B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C23251D83A97F00C73F9B /* Photo.swift */; };
 		DD9C232D1D83A9F400C73F9B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C232C1D83A9F400C73F9B /* SwiftyJSON.swift */; };
-		DD9C23A91D83AE3700C73F9B /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C23A71D83AE3700C73F9B /* ReactiveCocoa.framework */; };
-		DD9C23AA1D83AE3700C73F9B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C23A81D83AE3700C73F9B /* Result.framework */; };
 		DD9C23B61D83B0E100C73F9B /* FlickrFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C23B51D83B0E100C73F9B /* FlickrFetcher.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9C23A91D83AE3700C73F9B /* ReactiveCocoa.framework in Frameworks */,
-				DD9C23AA1D83AE3700C73F9B /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

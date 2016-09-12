@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import ReactiveCocoa
 
 public final class FlickrFetcher: NSObject {
 
@@ -19,14 +18,16 @@ public final class FlickrFetcher: NSObject {
         super.init()
     }
     
-    private let scheduler = UIScheduler()
-    
-    public func search(for query: String, completionHandler: @escaping ([Photo]?, NSError?) -> ()) {
-        FlickrAPI.search(for: query, with: credentials).observe(on: scheduler).startWithResult { result in
-            if result.error != nil {
-                completionHandler(nil, result.error)
+    public func search(for query: String, completionHandler: @escaping ([Photo]?, Error?) -> ()) {
+        FlickrAPI.search(for: query, with: credentials) { response, error in
+            if error != nil {
+                DispatchQueue.main.async {
+                    completionHandler(nil, error)
+                }
             } else {
-                completionHandler(result.value!?.items, nil)
+                DispatchQueue.main.async {
+                    completionHandler(response?.items, nil)
+                }
             }
         }
     }

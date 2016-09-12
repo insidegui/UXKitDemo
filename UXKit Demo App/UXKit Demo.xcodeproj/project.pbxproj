@@ -17,10 +17,6 @@
 		DD9C224F1D839C8C00C73F9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C224E1D839C8C00C73F9B /* main.m */; };
 		DD9C22541D839C8C00C73F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9C22531D839C8C00C73F9B /* Assets.xcassets */; };
 		DD9C22571D839C8C00C73F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9C22551D839C8C00C73F9B /* Main.storyboard */; };
-		DD9C239E1D83ADEF00C73F9B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C238F1D83ADE700C73F9B /* Result.framework */; };
-		DD9C239F1D83ADEF00C73F9B /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C238F1D83ADE700C73F9B /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DD9C23A21D83ADEF00C73F9B /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C23791D83ADE700C73F9B /* ReactiveCocoa.framework */; };
-		DD9C23A31D83ADEF00C73F9B /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C23791D83ADE700C73F9B /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD9C23B11D83AE8100C73F9B /* FlickrSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C23B01D83AE7D00C73F9B /* FlickrSearch.framework */; };
 		DD9C23B21D83AE8100C73F9B /* FlickrSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C23B01D83AE7D00C73F9B /* FlickrSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD9C23BC1D83B60B00C73F9B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C23BB1D83B60B00C73F9B /* SearchViewController.m */; };
@@ -31,125 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DD9C23781D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D04725EA19E49ED7006002AA;
-			remoteInfo = "ReactiveCocoa-Mac";
-		};
-		DD9C237A1D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D04725F519E49ED7006002AA;
-			remoteInfo = "ReactiveCocoa-MacTests";
-		};
-		DD9C237C1D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D047260C19E49F82006002AA;
-			remoteInfo = "ReactiveCocoa-iOS";
-		};
-		DD9C237E1D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D047261619E49F82006002AA;
-			remoteInfo = "ReactiveCocoa-iOSTests";
-		};
-		DD9C23801D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A9B315541B3940610001CB9C;
-			remoteInfo = "ReactiveCocoa-watchOS";
-		};
-		DD9C23821D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 57A4D2411BA13D7A00F7D4B1;
-			remoteInfo = "ReactiveCocoa-tvOS";
-		};
-		DD9C23841D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7DFBED031CDB8C9500EE435B;
-			remoteInfo = "ReactiveCocoa-tvOSTests";
-		};
-		DD9C238E1D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D45480571A9572F5009D7229;
-			remoteInfo = "Result-Mac";
-		};
-		DD9C23901D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D45480671A9572F5009D7229;
-			remoteInfo = "Result-MacTests";
-		};
-		DD9C23921D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D454807D1A957361009D7229;
-			remoteInfo = "Result-iOS";
-		};
-		DD9C23941D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D45480871A957362009D7229;
-			remoteInfo = "Result-iOSTests";
-		};
-		DD9C23961D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 57FCDE471BA280DC00130C48;
-			remoteInfo = "Result-tvOS";
-		};
-		DD9C23981D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 57FCDE541BA280E000130C48;
-			remoteInfo = "Result-tvOSTests";
-		};
-		DD9C239A1D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D03579A31B2B788F005D26AE;
-			remoteInfo = "Result-watchOS";
-		};
-		DD9C239C1D83ADE700C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D03579B01B2B78A1005D26AE;
-			remoteInfo = "Result-watchOSTests";
-		};
-		DD9C23A01D83ADEF00C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D45480561A9572F5009D7229;
-			remoteInfo = "Result-Mac";
-		};
-		DD9C23A41D83ADEF00C73F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D04725E919E49ED7006002AA;
-			remoteInfo = "ReactiveCocoa-Mac";
-		};
 		DD9C23AF1D83AE7D00C73F9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD9C23AB1D83AE7C00C73F9B /* FlickrSearch.xcodeproj */;
@@ -173,8 +50,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DD9C23A31D83ADEF00C73F9B /* ReactiveCocoa.framework in Embed Frameworks */,
-				DD9C239F1D83ADEF00C73F9B /* Result.framework in Embed Frameworks */,
 				DD9C23B21D83AE8100C73F9B /* FlickrSearch.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -306,8 +181,6 @@
 		DD9C22F41D83A12F00C73F9B /* UXViewControllerWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXViewControllerWindowTransition.h; sourceTree = "<group>"; };
 		DD9C22F51D83A12F00C73F9B /* UXWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXWindowController.h; sourceTree = "<group>"; };
 		DD9C22F61D83A12F00C73F9B /* UXZoomingCrossfadeTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXZoomingCrossfadeTransitionController.h; sourceTree = "<group>"; };
-		DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = "UXKit Demo/Vendor/ReactiveCocoa/Carthage/Checkouts/Result/Result.xcodeproj"; sourceTree = "<group>"; };
-		DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = "UXKit Demo/Vendor/ReactiveCocoa/ReactiveCocoa.xcodeproj"; sourceTree = "<group>"; };
 		DD9C23AB1D83AE7C00C73F9B /* FlickrSearch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FlickrSearch.xcodeproj; path = "UXKit Demo/FlickrSearch/FlickrSearch.xcodeproj"; sourceTree = "<group>"; };
 		DD9C23BA1D83B60B00C73F9B /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		DD9C23BB1D83B60B00C73F9B /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
@@ -327,8 +200,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD4181861D848CFB0058EA67 /* UXKit.framework in Frameworks */,
-				DD9C239E1D83ADEF00C73F9B /* Result.framework in Frameworks */,
-				DD9C23A21D83ADEF00C73F9B /* ReactiveCocoa.framework in Frameworks */,
 				DD9C23B11D83AE8100C73F9B /* FlickrSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,8 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				DD9C23AB1D83AE7C00C73F9B /* FlickrSearch.xcodeproj */,
-				DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */,
-				DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */,
 				DD9C227F1D83A12F00C73F9B /* UXKitHeaders */,
 				DD9C22491D839C8C00C73F9B /* UXKit Demo */,
 				DD9C22481D839C8C00C73F9B /* Products */,
@@ -492,35 +361,6 @@
 			path = ../UXKitHeaders;
 			sourceTree = "<group>";
 		};
-		DD9C236C1D83ADE600C73F9B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DD9C238F1D83ADE700C73F9B /* Result.framework */,
-				DD9C23911D83ADE700C73F9B /* Result-MacTests.xctest */,
-				DD9C23931D83ADE700C73F9B /* Result.framework */,
-				DD9C23951D83ADE700C73F9B /* Result-iOSTests.xctest */,
-				DD9C23971D83ADE700C73F9B /* Result.framework */,
-				DD9C23991D83ADE700C73F9B /* Result-tvOSTests.xctest */,
-				DD9C239B1D83ADE700C73F9B /* Result.framework */,
-				DD9C239D1D83ADE700C73F9B /* Result-watchOSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DD9C236F1D83ADE600C73F9B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DD9C23791D83ADE700C73F9B /* ReactiveCocoa.framework */,
-				DD9C237B1D83ADE700C73F9B /* ReactiveCocoaTests.xctest */,
-				DD9C237D1D83ADE700C73F9B /* ReactiveCocoa.framework */,
-				DD9C237F1D83ADE700C73F9B /* ReactiveCocoaTests.xctest */,
-				DD9C23811D83ADE700C73F9B /* ReactiveCocoa.framework */,
-				DD9C23831D83ADE700C73F9B /* ReactiveCocoa.framework */,
-				DD9C23851D83ADE700C73F9B /* ReactiveCocoaTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		DD9C23AC1D83AE7C00C73F9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -603,8 +443,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD9C23A11D83ADEF00C73F9B /* PBXTargetDependency */,
-				DD9C23A51D83ADEF00C73F9B /* PBXTargetDependency */,
 				DD9C23B41D83AE8100C73F9B /* PBXTargetDependency */,
 			);
 			name = "UXKit Demo";
@@ -645,14 +483,6 @@
 					ProductGroup = DD9C23AC1D83AE7C00C73F9B /* Products */;
 					ProjectRef = DD9C23AB1D83AE7C00C73F9B /* FlickrSearch.xcodeproj */;
 				},
-				{
-					ProductGroup = DD9C236F1D83ADE600C73F9B /* Products */;
-					ProjectRef = DD9C236E1D83ADE600C73F9B /* ReactiveCocoa.xcodeproj */;
-				},
-				{
-					ProductGroup = DD9C236C1D83ADE600C73F9B /* Products */;
-					ProjectRef = DD9C236B1D83ADE600C73F9B /* Result.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -662,111 +492,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		DD9C23791D83ADE700C73F9B /* ReactiveCocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ReactiveCocoa.framework;
-			remoteRef = DD9C23781D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C237B1D83ADE700C73F9B /* ReactiveCocoaTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ReactiveCocoaTests.xctest;
-			remoteRef = DD9C237A1D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C237D1D83ADE700C73F9B /* ReactiveCocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ReactiveCocoa.framework;
-			remoteRef = DD9C237C1D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C237F1D83ADE700C73F9B /* ReactiveCocoaTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ReactiveCocoaTests.xctest;
-			remoteRef = DD9C237E1D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C23811D83ADE700C73F9B /* ReactiveCocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ReactiveCocoa.framework;
-			remoteRef = DD9C23801D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C23831D83ADE700C73F9B /* ReactiveCocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ReactiveCocoa.framework;
-			remoteRef = DD9C23821D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C23851D83ADE700C73F9B /* ReactiveCocoaTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ReactiveCocoaTests.xctest;
-			remoteRef = DD9C23841D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C238F1D83ADE700C73F9B /* Result.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Result.framework;
-			remoteRef = DD9C238E1D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C23911D83ADE700C73F9B /* Result-MacTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Result-MacTests.xctest";
-			remoteRef = DD9C23901D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C23931D83ADE700C73F9B /* Result.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Result.framework;
-			remoteRef = DD9C23921D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C23951D83ADE700C73F9B /* Result-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Result-iOSTests.xctest";
-			remoteRef = DD9C23941D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C23971D83ADE700C73F9B /* Result.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Result.framework;
-			remoteRef = DD9C23961D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C23991D83ADE700C73F9B /* Result-tvOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Result-tvOSTests.xctest";
-			remoteRef = DD9C23981D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C239B1D83ADE700C73F9B /* Result.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Result.framework;
-			remoteRef = DD9C239A1D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DD9C239D1D83ADE700C73F9B /* Result-watchOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Result-watchOSTests.xctest";
-			remoteRef = DD9C239C1D83ADE700C73F9B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		DD9C23B01D83AE7D00C73F9B /* FlickrSearch.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -811,16 +536,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DD9C23A11D83ADEF00C73F9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Result-Mac";
-			targetProxy = DD9C23A01D83ADEF00C73F9B /* PBXContainerItemProxy */;
-		};
-		DD9C23A51D83ADEF00C73F9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ReactiveCocoa-Mac";
-			targetProxy = DD9C23A41D83ADEF00C73F9B /* PBXContainerItemProxy */;
-		};
 		DD9C23B41D83AE8100C73F9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FlickrSearch;
